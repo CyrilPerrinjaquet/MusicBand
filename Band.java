@@ -26,16 +26,7 @@ public class Band  {
         // TODO a implémenter
     }
 
-    // regrouper les musiciens ensemble -> heritage d'heritage
-    // Drummer extends Musician -> Musician extends MemberBand
 
-    // renommer la class MembersBand en MemberBand
-
-    // musician, singer, dancer, fonction spécifique: example play for musician
-    // return une string qui correspond a une note "do", re mi fa .... de maniere aleatoire
-
-//    guitarist.play() -> fa
-//    guitarist.play() -> mi
 
 
 }
