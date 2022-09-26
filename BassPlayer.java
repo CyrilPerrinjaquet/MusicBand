@@ -1,6 +1,6 @@
 package MusicBand;
 
-public class BassPlayer extends MembersBand {
+public class BassPlayer extends MemberBand {
     public BassPlayer(String name, int age, String experiences, Styles[] styles) {
         this.name = "Duff McKagan";
         this.age = 45;

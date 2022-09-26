@@ -1,6 +1,6 @@
 package MusicBand;
 
-public class Drummer extends MembersBand {
+public class Drummer extends MemberBand {
     public Drummer(String name, int age, String experiences, Styles[] styles) {
         this.name = "Chad Smith";
         this.age = 52;

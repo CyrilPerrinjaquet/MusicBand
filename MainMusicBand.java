@@ -6,7 +6,7 @@ public class MainMusicBand {
                 "elvis",
                 49,
                 "amazing elvis",
-                new MembersBand.Styles[MembersBand.Styles.ROCK.ordinal()]
+                new MemberBand.Styles[MemberBand.Styles.ROCK.ordinal()]
         );
 
         Band metallica = new Band(
@@ -14,7 +14,7 @@ public class MainMusicBand {
                       "elvis",
                       49,
                       "amazing elvis",
-                        new MembersBand.Styles[MembersBand.Styles.ROCK.ordinal()]
+                        new MemberBand.Styles[MemberBand.Styles.ROCK.ordinal()]
                 ),
                 elvis
         );
@@ -26,7 +26,7 @@ public class MainMusicBand {
                         "dolly parton",
                         78,
                         "amazing dolly",
-                        new MembersBand.Styles[MembersBand.Styles.ROCK.ordinal()]
+                        new MemberBand.Styles[MemberBand.Styles.ROCK.ordinal()]
                 ),
                 elvis
 

@@ -4,14 +4,14 @@ import javax.swing.*;
 import javax.swing.text.Style;
 import java.util.concurrent.atomic.DoubleAccumulator;
 
-public class MembersBand  {
+public class MemberBand  {
     protected String name;
     protected int age;
     protected String experiences;
 
     protected Styles[] styles;
 
-    public MembersBand(String name, int age, String experiences, Styles[] styles) {
+    public MemberBand(String name, int age, String experiences, Styles[] styles) {
         this.name = name;
         this.age = age;
         this.experiences = experiences;
