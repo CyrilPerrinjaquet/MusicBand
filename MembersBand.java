@@ -37,11 +37,8 @@ public class MemberBand  {
     enum Styles {
         ROCK,
         ROCKNROLL,
-
         RandB,
-
         BLUES
-
     }
 
 }
