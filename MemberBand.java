@@ -25,6 +25,7 @@ public class MemberBand  {
         System.out.println(count + ready);
     }
 
+
     public String toString() {
         String description = "Name : " + name + "\n" + "Experiences : " + experiences + "\n" + "Styles: \n" ;
         for(Styles style : styles) {
@@ -34,11 +35,13 @@ public class MemberBand  {
     }
 
 
-    enum Styles {
+    enum Styles { // peut-être faire des sous styles(ex. funk rock, punk rock etc)
         ROCK,
         ROCKNROLL,
         RandB,
-        BLUES
+        BLUES,
+        METAL,
+        HEAVYMETAL
     }
 
 }

@@ -4,6 +4,7 @@ package MusicBand;
 import java.text.NumberFormat;
 
 public class Band  {
+    protected Musician musician;
     protected BassPlayer bassplayer;
 
     protected Guitarist guitarist;
@@ -12,12 +13,12 @@ public class Band  {
     protected Singer singer;
     protected Dancer dancer;
 
-    public Band(Dancer dancer, Guitarist guitarist) {
+    public Band(Dancer dancer, Guitarist guitarist, Drummer drummer, BassPlayer bassplayer, Singer singer) {
         this.dancer  = dancer;
-        this.singer = new Singer("Freddie Mercury", 35, "One of the best singer and played piano/guitar too",  new MembersBand.Styles[MembersBand.Styles.ROCK.ordinal()]);
+        this.singer = singer;
         this.guitarist = guitarist;
-        this.bassplayer = new BassPlayer();
-        this.drummer = new Drummer();
+        this.bassplayer = bassplayer;
+        this.drummer = drummer;
     }
 
 
@@ -25,5 +26,4 @@ public class Band  {
     public String toString() {
         // TODO a implémenter
     }
-
 }

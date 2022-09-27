@@ -1,13 +1,8 @@
 package MusicBand;
 
-public class Drummer extends MemberBand {
+public class Drummer extends Musician {
     public Drummer(String name, int age, String experiences, Styles[] styles) {
-        this.name = "Chad Smith";
-        this.age = 52;
-        this.experiences = "Drummer of Red hot since 1988";
-        this.styles = new Styles[] {
-                Styles.ROCK
-        };
+        super(name, age, experiences, styles);
     }
 
     @Override

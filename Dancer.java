@@ -1,6 +1,6 @@
 package MusicBand;
 
-public class Dancer extends MemberBand {
+public class Dancer extends Musician {
     public Dancer(String name, int age, String experiences, Styles[] styles) {
         super(name, age, experiences, styles);
     }
