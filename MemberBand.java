@@ -2,6 +2,7 @@ package MusicBand;
 
 import javax.swing.*;
 import javax.swing.text.Style;
+import java.util.Arrays;
 import java.util.concurrent.atomic.DoubleAccumulator;
 
 public class MemberBand  {
@@ -27,7 +28,7 @@ public class MemberBand  {
 
 
     public String toString() {
-        String description = "Name : " + name + "\n" + "Experiences : " + experiences + "\n" + "Styles: \n" ;
+        String description = "Name : " + name + "\n" + "Experiences : " + experiences + "\n" + "Styles : " + "\n";
         for(Styles style : styles) {
            description = description + style.toString() + "\n";
        }
@@ -35,7 +36,7 @@ public class MemberBand  {
     }
 
 
-    enum Styles { // peut-être faire des sous styles(ex. funk rock, punk rock etc)
+   public enum Styles { // peut-être faire des sous styles(ex. funk rock, punk rock etc)
         ROCK,
         ROCKNROLL,
         RandB,

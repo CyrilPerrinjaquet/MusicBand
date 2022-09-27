@@ -1,7 +1,7 @@
 # Objectif pour la semaine prochaine
 
 ```markdown
-* implementer la methode toString pour le band
+* implementer la methode toString pour le band  // fait
 * implementer les methodes toString des enfants.
 
 * regrouper les musiciens ensemble -> heritage d'heritage 
