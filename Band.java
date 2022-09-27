@@ -26,8 +26,4 @@ public class Band  {
         // TODO a implémenter
     }
 
-
-
-
 }
-
