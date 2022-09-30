@@ -2,11 +2,11 @@
 
 ```markdown
 * implementer la methode toString pour le band  // ✅
-* implementer les methodes toString des enfants.
+* implementer les methodes toString des enfants. // ✅
 
 * regrouper les musiciens ensemble -> heritage d'heritage ✅
   
-    Drummer extends Musician -> Musician extends MemberBand 
+    Drummer extends Musician -> Musician extends MemberBand ✅
 
 * renommer la class MembersBand en MemberBand // ✅
 

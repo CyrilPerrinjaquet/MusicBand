@@ -6,14 +6,22 @@ public class Guitarist extends Musician {
 
     public Guitarist(String name, int age, String experiences, Styles[] styles) {
         super(name, age, experiences, styles);
+        this.name = name;
+    }
+
+    public void justBeforePlaying() {
+        String ready = this.name + " :" + " IM READY !";
+        System.out.println(ready);
     }
 
     public void accord() {
-        String tune = " is tuning he's guitar before the show";
+        /*expemple of optimisation *///    String separator = ", ";
+        String tune = this.name /*separator*/ + " is tuning he's guitar before the show";
         System.out.println(tune);
     }
+
     public String play() {
-    accord();
+        accord();
         return "";
     }
 

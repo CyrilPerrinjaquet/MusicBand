@@ -23,6 +23,17 @@ public class Band {
         this.drummer = drummer;
     }
 
+    public String play() {
+        guitarist.justBeforePlaying();
+        bassplayer.justBeforePlaying();
+        dancer.justBeforePlaying();
+        singer.justBeforePlaying();
+        drummer.justBeforePlaying();
+        String yeah = "Here it comes ! " + this.name;
+        System.out.println("1, 2, 3, 4 " + yeah);
+        return "";
+
+    }
 
     @Override
     public String toString() {
