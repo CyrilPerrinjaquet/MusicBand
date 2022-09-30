@@ -1,6 +1,9 @@
 package MusicBand;
 
-import java.util.SplittableRandom;
+//import static MusicBand.Dancer.playDancer;
+
+
+import java.sql.DatabaseMetaData;
 
 public class Musician extends MemberBand {
     public Musician(String name, int age, String experiences, Styles[] styles) {

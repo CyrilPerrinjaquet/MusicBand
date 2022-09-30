@@ -18,7 +18,7 @@ public class MainMusicBand {
         ////// Metallica ici
 
         Dancer Prince = new Dancer(
-                "Prince Rogers Nelson",
+                "Prince Rogers Nelson or Prince",
                 57,
                 "The prince of pop",
                 new MemberBand.Styles[]{MemberBand.Styles.HEAVYMETAL, MemberBand.Styles.METAL}
@@ -35,7 +35,6 @@ public class MainMusicBand {
                 58,
                 "The drummer of Metallica",
                 new MemberBand.Styles[]{MemberBand.Styles.HEAVYMETAL, MemberBand.Styles.METAL}
-
         );
         Singer James = new Singer(
                 "James Hetfield",
@@ -116,16 +115,18 @@ public class MainMusicBand {
         System.out.println(metallica.bassplayer.toString());
         System.out.println(metallica.dancer.toString());
 
-        // Goal for this week
-        System.out.println(metallica.toString());
-        System.out.println(redHotChilliPeppers.toString());
+//        // Goal for this week
+//        System.out.println(metallica.toString());
+//        System.out.println(redHotChilliPeppers.toString());
 
-//
+
 //        System.out.println(metallica.drummer.play());
 //        System.out.println(metallica.guitarist.play());
 //        System.out.println(metallica.bassplayer.play());
-//
-//        // if enough time
+//        System.out.println(metallica.dancer.play());
+
+
+        // if enough time
 //        System.out.println(metallica.play());
 
     }

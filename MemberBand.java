@@ -5,7 +5,7 @@ import javax.swing.text.Style;
 import java.util.Arrays;
 import java.util.concurrent.atomic.DoubleAccumulator;
 
-public class MemberBand  {
+public class MemberBand {
     protected String name;
     protected int age;
     protected String experiences;
@@ -20,12 +20,10 @@ public class MemberBand  {
     }
 
     /// Fonction jouer
-    public void play() {
-        String count = "1, 2, 3, 4, ";
-        String ready = "Ready to go !";
-        System.out.println(count + ready);
-    }
-
+//        public String play() {
+//            Dancer dancer = new Dancer(name, age, experiences, styles);
+//            return "";
+//        }
 
     public String toString() {
         String description = "Name : " + name + "\n" + "Experiences : " + experiences + "\n" + "Styles : " + "\n";
@@ -36,7 +34,7 @@ public class MemberBand  {
     }
 
 
-   public enum Styles { // peut-être faire des sous styles(ex. funk rock, punk rock etc)
+   public enum Styles { // Maybe make some sub-styles like (ex. funk rock, punk rock etc..)
         ROCK,
         ROCKNROLL,
         RandB,
