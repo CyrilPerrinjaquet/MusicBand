@@ -12,7 +12,7 @@
 
 * ajouter tous les membres en parametres de Band // ✅
 
-* musician, singer, dancer, fonction spécifique: example play for musician
+* musician, singer, dancer, fonction spécifique: example play for musician ✅
     
     return une string qui correspond a une note "do", re mi fa .... de maniere aleatoire
 

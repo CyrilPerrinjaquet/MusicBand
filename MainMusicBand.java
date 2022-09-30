@@ -127,6 +127,7 @@ public class MainMusicBand {
 
         // if enough time
         System.out.println(metallica.play());
+        System.out.println(redHotChilliPeppers.play());
 
     }
 }
