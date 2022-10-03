@@ -3,6 +3,7 @@ package MusicBand;
 import javax.swing.*;
 import javax.swing.text.Style;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.concurrent.atomic.DoubleAccumulator;
 
 public class MemberBand {
@@ -19,11 +20,6 @@ public class MemberBand {
         this.styles = styles;
     }
 
-    /// Fonction jouer
-//        public String play() {
-//            Dancer dancer = new Dancer(name, age, experiences, styles);
-//            return "";
-//        }
 
     public String toString() {
         String description = "Name : " + name + "\n" + "Experiences : " + experiences + "\n" + "Styles : " + "\n";
@@ -41,6 +37,22 @@ public class MemberBand {
         BLUES,
         METAL,
         HEAVYMETAL
+    }
+
+    public enum Notes {
+        DO,
+        RE,
+        MI,
+        FA,
+        SOL,
+        LA,
+        SI;
+
+        private static final Random NOTE = new Random();
+        public static Notes randomNotes() {
+            Notes[] notes = values();/* poser question sur values*/
+            return notes[NOTE.nextInt(notes.length)];
+        }
     }
 
 }

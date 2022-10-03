@@ -48,15 +48,14 @@ public class MainMusicBand {
                 "The bassplayer of Metallica",
                 new MemberBand.Styles[]{MemberBand.Styles.HEAVYMETAL, MemberBand.Styles.METAL}
         );
-         Band metallica = new Band(
-                 "METALLICAAAAAA",
+        Band metallica = new Band(
+                "METALLICAAAAAA",
                 Prince,
                 Kirk,
                 Lars,
                 Robert,
                 James
         );
-
 
 
         ////// Red hot ici

@@ -6,7 +6,6 @@ public class Guitarist extends Musician {
 
     public Guitarist(String name, int age, String experiences, Styles[] styles) {
         super(name, age, experiences, styles);
-        this.name = name;
     }
 
     public void justBeforePlaying() {
@@ -22,6 +21,7 @@ public class Guitarist extends Musician {
 
     public String play() {
         accord();
+        super.notes();
         return "";
     }
 

@@ -16,7 +16,7 @@ public class Band {
 
     public Band(String name, Dancer dancer, Guitarist guitarist, Drummer drummer, BassPlayer bassplayer, Singer singer) {
         this.name = name;
-        this.dancer  = dancer;
+        this.dancer = dancer;
         this.singer = singer;
         this.guitarist = guitarist;
         this.bassplayer = bassplayer;
@@ -35,14 +35,13 @@ public class Band {
 
     }
 
-    @Override
     public String toString() {
-      String descriptionDancer = "The dancer of " + name + " is : " + dancer.name + " and he is " + dancer.age + "\n" + "who he is : " + dancer.experiences + "\n" + "\n";
-      String descriptionSinger = "The singer is " + name + " is : " + singer.name + " and he is " + singer.age + "\n" + "who he is : " + singer.experiences + "\n" + "\n";
-      String descriptionGuitarist = "The guitarist is " + name + " is : " +  guitarist.name + " and he is " + guitarist.age + "\n" + "who he is : " + guitarist.experiences + "\n" + "\n";
-      String descriptionBassPlayer = "The bass player is " + name + " is : " +  bassplayer.name + " and he is " + bassplayer.age + "\n" + "who he is : " + bassplayer.experiences + "\n" + "\n";
-      String descriptionDrummer = "The drummer is " + name + " is : " + drummer.name + " and he is " + drummer.age + "\n" + "who he is : " + drummer.experiences + "\n" + "\n";
+        String descriptionDancer = "The dancer of " + name + " is : " + dancer.name + " and he is " + dancer.age + "\n" + "who he is : " + dancer.experiences + "\n" + "\n";
+        String descriptionSinger = "The singer is " + name + " is : " + singer.name + " and he is " + singer.age + "\n" + "who he is : " + singer.experiences + "\n" + "\n";
+        String descriptionGuitarist = "The guitarist is " + name + " is : " + guitarist.name + " and he is " + guitarist.age + "\n" + "who he is : " + guitarist.experiences + "\n" + "\n";
+        String descriptionBassPlayer = "The bass player is " + name + " is : " + bassplayer.name + " and he is " + bassplayer.age + "\n" + "who he is : " + bassplayer.experiences + "\n" + "\n";
+        String descriptionDrummer = "The drummer is " + name + " is : " + drummer.name + " and he is " + drummer.age + "\n" + "who he is : " + drummer.experiences + "\n" + "\n";
         // TODO a implémenter
-      return descriptionDancer + descriptionSinger + descriptionGuitarist + descriptionBassPlayer + descriptionDrummer;
+        return descriptionDancer + descriptionSinger + descriptionGuitarist + descriptionBassPlayer + descriptionDrummer;
     }
 }
