@@ -1,20 +1,14 @@
 package MusicBand;
 
 import javax.swing.text.Style;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class MainMusicBand {
     public static void main(String[] args) {
         // Create a guitarist to be able to re-use it
-        // sera utile quand j'aurais plusieurs groupes pour l'instant j'en ai pas besoin
-/*        Drummer elvis = new Drummer(
-                "elvis",
-                49,
-                "amazing elvis",
-                new MemberBand.Styles[]{MemberBand.Styles.ROCK}
-        );*/
-
         // Create the band Metallica
-
         ////// Metallica ici
 
         Dancer Prince = new Dancer(
@@ -123,6 +117,9 @@ public class MainMusicBand {
         System.out.println(metallica.guitarist.play());
         System.out.println(metallica.bassplayer.play());
 
+        for (int i = 0; i < 10; i++) {
+            System.out.println(metallica.bassplayer.randomNotes());
+        }
 
         // if enough time
         System.out.println(metallica.play());

@@ -17,7 +17,7 @@ public class BassPlayer extends Musician {
 
     public String play() {
         tuning();
-        super.notes();
+        super.playnotes();
         return "";
     }
 

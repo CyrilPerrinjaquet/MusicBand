@@ -16,9 +16,10 @@ public class Musician extends MemberBand {
         return "";
     }
 
-    public void notes() {
-        Notes.randomNotes();
-        System.out.println(Notes.randomNotes());
+
+    public void playnotes() {
+        randomNotes();
+        System.out.println(randomNotes());
     }
 
     // enum for the notes C, D, E, F, G, A, B create an array of notes

@@ -17,7 +17,7 @@ public class Dancer extends Musician {
 
     public String play() {
         stretch();
-        super.notes();
+        super.playnotes();
         return "";
     }
 

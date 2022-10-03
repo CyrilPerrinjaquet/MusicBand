@@ -14,7 +14,7 @@
 
 * musician, singer, dancer, fonction spécifique: example play for musician ✅
     
-    return une string qui correspond a une note "do", re mi fa .... de maniere aleatoire
+    return une string qui correspond a une note "do", re mi fa .... de maniere aleatoire ✅
 
     guitarist.play() -> fa
     guitarist.play() -> mi

@@ -18,7 +18,7 @@ public class Singer extends Musician {
 
     public String play() {
         prep();
-        super.notes();
+        super.playnotes();
         return "";
     }
 

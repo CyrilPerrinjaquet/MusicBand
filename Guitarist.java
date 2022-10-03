@@ -21,7 +21,7 @@ public class Guitarist extends Musician {
 
     public String play() {
         accord();
-        super.notes();
+        super.playnotes();
         return "";
     }
 

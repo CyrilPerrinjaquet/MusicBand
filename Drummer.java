@@ -17,7 +17,7 @@ public class Drummer extends Musician {
 
     public String play() { // the principal method of the guitarist
         repair();
-        super.notes();
+        super.playnotes();
         return "";
     }
 
