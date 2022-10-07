@@ -1,13 +1,23 @@
 package MusicBand;
 
-public class BassPlayer extends MembersBand {
-    public BassPlayer(String name, int age, String experiences, Styles[] styles) {
-        this.name = "Duff McKagan";
-        this.age = 45;
-        this.experiences = "Never touched a bass but he was introduced to it in the 85's";
-        this.styles = new Styles[] {
-                Styles.ROCK
-        };
+public class BassPlayer extends Musician {
+    public BassPlayer(String name, int age, String experiences, Style[] styles) {
+        super(name, age, experiences, styles);
+    }
+
+    public void playBand() {
+        String ready = this.name + " :" + " IM READY !";
+        System.out.println(ready);
+    }
+
+    public void tuning() {
+        String tune = this.name + " is tuning hes bass before the show";
+        System.out.println(tune);
+    }
+
+    public void play() {
+        tuning();
+        super.playNotes();
     }
 
     @Override
