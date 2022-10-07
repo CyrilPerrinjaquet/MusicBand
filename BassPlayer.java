@@ -1,11 +1,11 @@
 package MusicBand;
 
 public class BassPlayer extends Musician {
-    public BassPlayer(String name, int age, String experiences, Styles[] styles) {
+    public BassPlayer(String name, int age, String experiences, Style[] styles) {
         super(name, age, experiences, styles);
     }
 
-    public void justBeforePlaying() {
+    public void playBand() {
         String ready = this.name + " :" + " IM READY !";
         System.out.println(ready);
     }
@@ -15,10 +15,9 @@ public class BassPlayer extends Musician {
         System.out.println(tune);
     }
 
-    public String play() {
+    public void play() {
         tuning();
-        super.playnotes();
-        return "";
+        super.playNotes();
     }
 
     @Override

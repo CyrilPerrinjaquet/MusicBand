@@ -1,11 +1,11 @@
 package MusicBand;
 
 public class Drummer extends Musician {
-    public Drummer(String name, int age, String experiences, Styles[] styles) {
+    public Drummer(String name, int age, String experiences, Style[] styles) {
         super(name, age, experiences, styles);
     }
 
-    public void justBeforePlaying() { // for the entire band
+    public void playBand() { // for the band
         String ready = this.name + " :" + " IM READY !";
         System.out.println(ready);
     }
@@ -15,10 +15,10 @@ public class Drummer extends Musician {
         System.out.println(repair);
     }
 
-    public String play() { // the principal method of the guitarist
+
+    public void play() { // the principal method of the guitarist
         repair();
-        super.playnotes();
-        return "";
+        super.playNotes();
     }
 
     @Override

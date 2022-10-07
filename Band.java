@@ -2,12 +2,12 @@ package MusicBand;
 
 
 import java.text.NumberFormat;
+import java.util.Objects;
+import java.util.HashMap;
 
 public class Band {
     public String name;
-    protected Musician musician;
     protected BassPlayer bassplayer;
-
     protected Guitarist guitarist;
     protected Drummer drummer;
 
@@ -23,17 +23,22 @@ public class Band {
         this.drummer = drummer;
     }
 
-    public String play() {
-        guitarist.justBeforePlaying();
-        bassplayer.justBeforePlaying();
-        dancer.justBeforePlaying();
-        singer.justBeforePlaying();
-        drummer.justBeforePlaying();
-        String yeah = "Here it comes ! " + this.name;
-        System.out.println("1, 2, 3, 4 " + yeah);
-        return "";
+    /**
+     * The method play() here is making play
+     *
+     * @return return play for all group
+     */
 
+    public void play() {
+        guitarist.playBand();
+        bassplayer.playBand();
+        dancer.playBand();
+        singer.playBand();
+        drummer.playBand();
+        String yeah = "Here it comes " + this.name + " ! " + "\n";
+        System.out.println("1, 2, 3, 4 " + yeah);
     }
+
 
     public String toString() {
         String descriptionDancer = "The dancer of " + name + " is : " + dancer.name + " and he is " + dancer.age + "\n" + "who he is : " + dancer.experiences + "\n" + "\n";
