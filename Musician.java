@@ -21,7 +21,10 @@ public abstract class Musician extends MemberBand {
      * @return random notes between {DO, RE, MI, FA, SOL, LA, SI}
      */
    public void playNotes() {
-       System.out.println(Arrays.toString(Note.randomNotes()) + "\n"); // savoir pk le array.toString
+       Note[] notes = Note.randomNotes();
+       for (int notesIndex = 0; notesIndex < notes.length; notesIndex++) {
+           System.out.println(notes[notesIndex]);
+       }
    }
 
     // enum for the notes C, D, E, F, G, A, B create an array of notes
