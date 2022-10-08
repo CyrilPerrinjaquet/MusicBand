@@ -46,7 +46,7 @@ public class Band {
         String descriptionGuitarist = "The guitarist is " + name + " is : " + guitarist.name + " and he is " + guitarist.age + "\n" + "who he is : " + guitarist.experiences + "\n" + "\n";
         String descriptionBassPlayer = "The bass player is " + name + " is : " + bassplayer.name + " and he is " + bassplayer.age + "\n" + "who he is : " + bassplayer.experiences + "\n" + "\n";
         String descriptionDrummer = "The drummer is " + name + " is : " + drummer.name + " and he is " + drummer.age + "\n" + "who he is : " + drummer.experiences + "\n" + "\n";
-        // TODO a implémenter
+        
         return descriptionDancer + descriptionSinger + descriptionGuitarist + descriptionBassPlayer + descriptionDrummer;
     }
 }
