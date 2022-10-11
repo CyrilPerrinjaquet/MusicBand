@@ -24,10 +24,9 @@ public class Band {
     }
 
     /**
-     * The method play() here is making play
-     *
-     * @return return play for all group
-     */
+     * Make all the band play together
+     * @prints The name of the musician + the variable yeah
+    */
 
     public void play() {
         guitarist.playBand();
@@ -46,7 +45,7 @@ public class Band {
         String descriptionGuitarist = "The guitarist is " + name + " is : " + guitarist.name + " and he is " + guitarist.age + "\n" + "who he is : " + guitarist.experiences + "\n" + "\n";
         String descriptionBassPlayer = "The bass player is " + name + " is : " + bassplayer.name + " and he is " + bassplayer.age + "\n" + "who he is : " + bassplayer.experiences + "\n" + "\n";
         String descriptionDrummer = "The drummer is " + name + " is : " + drummer.name + " and he is " + drummer.age + "\n" + "who he is : " + drummer.experiences + "\n" + "\n";
-        
+
         return descriptionDancer + descriptionSinger + descriptionGuitarist + descriptionBassPlayer + descriptionDrummer;
     }
 }

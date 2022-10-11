@@ -6,11 +6,11 @@
   
 * Compiler le code, appeler la méthode play sur un groupe(queen, red hot etc..) ✅
 
-* Commit le code qui fonctionne et merge la PR
+* Commit le code qui fonctionne et merge la PR ✅
 
-* Définir les 4 nouveaux mots du lexique 
+* Définir les 4 nouveaux mots du lexique ✅
 
-* Créer une nouvelle branche et créer une nouvelle PR
+* Créer une nouvelle branche et créer une nouvelle PR ✅
 
 * Finir le randomNotes ✅
 
@@ -19,6 +19,8 @@
 * Sortir l'enum Styles dans sa propre classe ✅
 
 * Chaque rétrospective présenter ce que j'ai fait
+
+* Perfectionner les javadocs et les ajouters a toutes les méthodes et les attributs ✅
 
 ```
 =======

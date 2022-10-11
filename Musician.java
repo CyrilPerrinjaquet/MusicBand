@@ -1,9 +1,6 @@
 package MusicBand;
 
-//import static MusicBand.Dancer.playDancer;
 
-
-import java.util.Arrays;
 
 public abstract class Musician extends MemberBand {
 
@@ -12,13 +9,18 @@ public abstract class Musician extends MemberBand {
 
     }
 
-    // methode play(), void play just to say the method exists
+    /**
+     * Ca fait quoi ?
+     * The method play() here is just saying that the method exists
+     * Should be define by the child classes
+     * AJouter la diff entre la méthode play et la playNotes
+     */
     public abstract void play();
 
 
     /**
-     * the playnotes() method makes the artist play some random notes
-     * @return random notes between {DO, RE, MI, FA, SOL, LA, SI}
+     * the playNotes() method makes the artist play some random notes
+     * print 10 random notes coming from the enum Note
      */
    public void playNotes() {
        Note[] notes = Note.randomNotes();
@@ -27,11 +29,6 @@ public abstract class Musician extends MemberBand {
        }
    }
 
-    // enum for the notes C, D, E, F, G, A, B create an array of notes
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }
 
 
