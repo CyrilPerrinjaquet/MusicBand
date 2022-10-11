@@ -8,7 +8,7 @@
 
 * Commit le code qui fonctionne et merge la PR ✅
 
-* Définir les 4 nouveaux mots du lexique 
+* Définir les 4 nouveaux mots du lexique ✅
 
 * Créer une nouvelle branche et créer une nouvelle PR ✅
 
@@ -20,7 +20,7 @@
 
 * Chaque rétrospective présenter ce que j'ai fait
 
-* Perfectionner les javadocs et les ajouters a toutes les méthodes et les attributs
+* Perfectionner les javadocs et les ajouters a toutes les méthodes et les attributs ✅
 
 ```
 =======

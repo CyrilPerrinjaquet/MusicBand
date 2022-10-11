@@ -32,11 +32,13 @@
 
 - Javadoc : Documentationa en format HTML et généralement utilisé pour une méthode, classe ou des champs divers et qui permet d'ajouter des @return ou @throws pour indique quoi il retourne
 
-- Couplage : [passer en paramètre directement et retourner la méthode correspondante] Le couplage est enfait un moyen de simplifié la liaison entre classe donc au lieu de chercher l'instance.la valeurVoulue on met directement la méthode à la place de la valeur voulue 
+- Couplage : Lier deux choses entre elles et les rendres dépendantes les unes des autres (l'une ne peut pas exister sans l'autre)
  
 - Abstract :[aussi prévention, pour éviter que qlqu fasse n'importe quoi avec le code] une classe abstract est une classe qu'on va prendre pour modèle mais qui n'est pas encore finit (ex. abstract class Humain --> Homme précision de la classe abstraite Humain)
 
 - Instruction : Bloc d'instruction généralement entre des accolades {} et c'est a l'intérieur qu'on définit notre code 
+Instruction --> prend fin avec un ";" et est une action(ex. jump ou marcher)[Boucle for --> 3 instructions séparés de ;]
 
-- Objet vs fonction :  Objet = instance de classe 
-                       Fonction = ensemble d'instructions et qui peut être appelé dans le corps principale donc main 
+- Objet vs fonction :  Objet = instance de classe
+                       Fonction = ensemble d'instructions et qui peut être appelé dans le corps principale (par exemple Main) 
+- Objet = on peut call une méthode dessus et n'est pas un type primitif 

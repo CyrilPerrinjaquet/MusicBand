@@ -2,7 +2,7 @@ package MusicBand;
 
 
 /**
- *  i extend musician because of the method playNotes,
+ *  I extend musician because of the method playNotes,
  *  and the musician class extends the class memberband which contains the age experiences and all the propreties that the members have
  */
 public class Guitarist extends Musician {
@@ -36,10 +36,6 @@ public class Guitarist extends Musician {
      * play() is a general method which includes the method accord() method above and the method playNotes()
      * The method is about make the guitarist play
      */
-
-         // première ligne intention de la méthode
-        // deuxième pas de return si ca return rien si print --> mettre print
-
     public void play() {
         accord();
         super.playNotes();

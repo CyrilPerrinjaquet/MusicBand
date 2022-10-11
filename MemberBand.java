@@ -12,23 +12,28 @@ import java.util.concurrent.atomic.DoubleAccumulator;
 
 public abstract class MemberBand {
     /**
-     * The name is displayed for every artist and also for the Bands
-     * @return the name of the artist/Band
+     * Everybody(artist) and the bands have names
+     * We can specify the name like as we want (ex. full name : Brad Pitt)
      */
     protected String name;
+    // précision de l'attribut
+   // représenter l'age sémentiquement
     /**
-     * The age is displayed for every artist but not for the Band
-     * @return the age of the artists and only THE artists
+     * Everybody(artist) has an age [I can also add an age to the band but for now I don't want to]
+     * The age is in the years format (ex. the guitarist is 50 years old)
+     * The artist can have only one age (obviously)
      */
     protected int age;
     /**
-     * The experience is displayed for every artist but also for the Band
-     * @return the experiences of the artists and only THE artists
+     * Everybody(artist) has experiences [Not for the band]
+     * Experiences just say who he is and what he did/do
+     * The artist can have several experiences
      */
     protected String experiences;
     /**
-     * The styles is displayed for every artist but not for the Band
-     * @return the styles of the artists and only THE artists
+     * Everybody(artist) has styles attributed to [I can also add styles to the band but for now I don't want to]
+     * The styles are Music styles so like rock, pop, blues etc..
+     * Every artist can have multiple styles
      */
     protected Style[] styles;
 
@@ -41,8 +46,8 @@ public abstract class MemberBand {
 
 
     /**
-     * La méthode toString dans memberBand est la méthode principale, elle affiche l'expérience, les styles, le nom, et l'age
-     * @return la description qui inclu : nom, age, expérience, et styles
+     * The toString method is the main method, his objective is to make a description of the band/artist
+     * @return The description which includes : name, age, experience, styles
      */
     public String toString() {
         String description = "Name : " + name + "\n" + "Experiences : " + experiences + "\n" + "Styles : " + "\n";

@@ -1,13 +1,10 @@
 package MusicBand;
 
-import java.lang.reflect.Array;
-import java.util.*;
-
 public class MainMusicBand {
     public static void main(String[] args) {
-        Band metallica = creatMetallica();
-        Band redHotChilliPeppers = creatRedHotChilliPeppers();
-        Band queen = creatQueen();
+        Band metallica = createMetallica();
+        Band redHotChilliPeppers = createRedHotChilliPeppers();
+        Band queen = createQueen();
 //        HashMap<String, String> planning = new HashMap<>();
 //        planning.put("datesMetallica", "5.04.2023 " + "\n" + "20.04.2023 " + "\n" + "2.05.2023");
 //        planning.put("datesRedHot", "10.04.2023 " + "\n" + "25.04.2023 " + "\n" + "4.05.2023");
@@ -31,7 +28,7 @@ public class MainMusicBand {
 
 
     }
-    public static Band creatMetallica() {
+    public static Band createMetallica() {
         Dancer prince = new Dancer(
                 "Prince Rogers Nelson or 'Prince'",
                 57, "The prince of pop",
@@ -66,7 +63,7 @@ public class MainMusicBand {
                  james);
     };
 
-    public static Band creatRedHotChilliPeppers() {
+    public static Band createRedHotChilliPeppers() {
         Dancer Mick = new Dancer(
                 "Michael Philip Jagger",
                 79,
@@ -109,7 +106,7 @@ public class MainMusicBand {
         );
     }
 
-    public static Band creatQueen() {
+    public static Band createQueen() {
         Dancer Elvis = new Dancer(
                 "Elvis presley",
                 29,
