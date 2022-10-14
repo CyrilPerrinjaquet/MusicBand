@@ -10,10 +10,10 @@ public abstract class Musician extends MemberBand {
     }
 
     /**
-     * Ca fait quoi ?
+     *
      * The method play() here is just saying that the method exists
-     * Should be define by the child classes
-     * AJouter la diff entre la méthode play et la playNotes
+     * It should be define by the child class <br />
+     * The difference between the method play() and the method playNotes() it's that the method playNotes() picks a random note and prints it contrary to the method play() which is only defined by the child class and used in it
      */
     public abstract void play();
 

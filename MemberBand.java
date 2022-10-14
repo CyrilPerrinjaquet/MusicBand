@@ -16,8 +16,6 @@ public abstract class MemberBand {
      * We can specify the name like as we want (ex. full name : Brad Pitt)
      */
     protected String name;
-    // précision de l'attribut
-   // représenter l'age sémentiquement
     /**
      * Everybody(artist) has an age [I can also add an age to the band but for now I don't want to]
      * The age is in the years format (ex. the guitarist is 50 years old)

@@ -1,6 +1,9 @@
 package MusicBand;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.Random;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class NoteTest {
@@ -24,6 +27,21 @@ public class NoteTest {
 
     @Test
     void checkDoubleNotes() {
-        // TODO à faire vendredi
+        Note[] notes = Note.randomNotes();
+
+        // tire une note au hasard
+        int randomIndex = new Random().nextInt(0, Note.values().length - 1);
+        Note randomNote = Note.values()[randomIndex];
+
+        // Récupere la note précédente
+        for (int currentNotesIndex = 0; currentNotesIndex < 10; currentNotesIndex++) {
+            int previousIndex = Math.max(currentNotesIndex - 1, 0); // récupère l'index précédent ou le premier élément
+            Note previousNote = notes[previousIndex];
+            // Check if we have two same notes in a row
+            if (randomNote != previousNote) {
+                notes[currentNotesIndex] = randomNote; // sauvegarde randomNote dans le tableau note a l'index currentNoteIndex
+                currentNotesIndex++;
+            }
+        }
     }
 }

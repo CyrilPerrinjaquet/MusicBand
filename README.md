@@ -22,7 +22,7 @@
 
 * Perfectionner les javadocs et les ajouters a toutes les méthodes et les attributs ✅
 
-* Faire la méthode checkDoubleNotes() dans NoteTest 
+* Faire la méthode checkDoubleNotes() dans NoteTest ✅
 ```
 =======
 * implementer la methode toString pour le band ✅
