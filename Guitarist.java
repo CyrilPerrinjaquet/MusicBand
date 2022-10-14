@@ -28,7 +28,7 @@ public class Guitarist extends Musician {
      */
     public void accord() {
         /*expemple of optimisation */ //    String separator = ", ";
-        String tune = this.name /*separator*/ + " is tuning he's guitar before the show";
+        String tune = this.name + " is tuning he's guitar before the show";
         System.out.println(tune);
     }
 
