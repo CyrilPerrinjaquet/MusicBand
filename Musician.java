@@ -6,7 +6,6 @@ public abstract class Musician extends MemberBand {
 
     public Musician(String name, int age, String experiences, Style[] styles) {
         super(name, age, experiences, styles);
-
     }
 
     /**
