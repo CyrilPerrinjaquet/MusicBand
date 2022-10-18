@@ -15,7 +15,6 @@ public abstract class MemberBand {
         this.styles = styles;
     }
 
-
     public String toString() {
         String description = "Name : " + name + "\n" + "Experiences : " + experiences + "\n" + "Styles : " + "\n";
         for (Style style : styles) {
