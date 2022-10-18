@@ -1,7 +1,4 @@
-package MusicBand;
-
-import java.lang.reflect.Array;
-import java.util.*;
+import MusicBand.*;
 
 public class MainMusicBand {
     public static void main(String[] args) {

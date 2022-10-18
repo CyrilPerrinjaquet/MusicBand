@@ -1,18 +1,14 @@
 package MusicBand;
 
 
-import java.text.NumberFormat;
-import java.util.Objects;
-import java.util.HashMap;
-
 public class Band {
     public String name;
-    protected BassPlayer bassplayer;
-    protected Guitarist guitarist;
-    protected Drummer drummer;
+    public BassPlayer bassplayer;
+    public Guitarist guitarist;
+    public Drummer drummer;
 
-    protected Singer singer;
-    protected Dancer dancer;
+    public Singer singer;
+    public Dancer dancer;
 
     public Band(String name, Dancer dancer, Guitarist guitarist, Drummer drummer, BassPlayer bassplayer, Singer singer) {
         this.name = name;
