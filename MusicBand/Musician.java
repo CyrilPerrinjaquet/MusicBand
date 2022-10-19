@@ -1,10 +1,5 @@
 package MusicBand;
 
-//import static MusicBand.Dancer.playDancer;
-
-
-import java.util.Arrays;
-
 public abstract class Musician extends MemberBand {
 
     public Musician(String name, int age, String experiences, Style[] styles) {
