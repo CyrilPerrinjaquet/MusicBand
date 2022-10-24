@@ -22,7 +22,7 @@
 
 * Perfectionner les javadocs et les ajouters a toutes les méthodes et les attributs ✅
 
-* Faire la méthode checkDoubleNotes() dans NoteTest 
+* Faire la méthode checkDoubleNotes() dans NoteTest ✅
 ```
 =======
 * implementer la methode toString pour le band ✅
@@ -30,9 +30,9 @@
 
 * regrouper les musiciens ensemble -> heritage d'heritage ✅
   
-    Drummer extends Musician -> Musician extends MemberBand ✅
+    Drummer extends Musician -> Musician extends MusicBand.MemberBand ✅
 
-* renommer la class MembersBand en MemberBand ✅ 
+* renommer la class MembersBand en MusicBand.MemberBand ✅ 
 
 * ajouter tous les membres en parametres de Band ✅
 

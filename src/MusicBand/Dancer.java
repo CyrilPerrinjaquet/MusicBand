@@ -33,7 +33,7 @@ public class Dancer extends Musician {
     }
 
     /**
-     * The toString() is pointing to the MemberBand toString()[which is the main toString method]
+     * The toString() is pointing to the MusicBand.MemberBand toString()[which is the main toString method]
      * @return "The Dancer" + the desription in the memberband toString()
      */
     @Override

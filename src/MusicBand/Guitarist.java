@@ -42,7 +42,7 @@ public class Guitarist extends Musician {
     }
 
     /**
-     * The toString() here is returning pointing to the musician toString which is pointing to the MemberBand toString()[which is the main toString method]
+     * The toString() here is returning pointing to the musician toString which is pointing to the MusicBand.MemberBand toString()[which is the main toString method]
      * @return "The guitarist" + the desription in the memberband toString()
      */
     @Override

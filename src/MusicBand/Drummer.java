@@ -34,7 +34,7 @@ public class Drummer extends Musician {
     }
 
     /**
-     * The toString() is pointing to the MemberBand toString()[which is the main toString method]
+     * The toString() is pointing to the MusicBand.MemberBand toString()[which is the main toString method]
      * @return "The Drummer" + the desription in the memberband toString()
      */
 
