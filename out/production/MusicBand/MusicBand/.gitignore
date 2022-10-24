@@ -1,0 +1,14 @@
+# File that list all the files and folder you have on your computer and you does not want to add them to the project
+# more details here: https://git-scm.com/docs/gitignore and here https://www.w3schools.com/git/git_ignore.asp
+# tools that helps you to generate some gitignore according to different kind of project https://www.toptal.com/developers/gitignore
+
+#############
+##  MAC OS ##
+#############
+.idea
+
+#############
+##  OTHER  ##
+#############
+*.iml
+out/*

@@ -1,4 +1,4 @@
-package test;
+package MusicBand;
 
 import static org.junit.jupiter.api.Assertions.*;
 

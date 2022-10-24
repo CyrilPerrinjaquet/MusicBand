@@ -2,66 +2,68 @@ import MusicBand.*;
 
 public class MainMusicBand {
     public static void main(String[] args) {
+        Band metallica = createMetallica();
+        Band redHotChilliPeppers = createRedHotChilliPeppers();
+        Band queen = createQueen();
 //        HashMap<String, String> planning = new HashMap<>();
 //        planning.put("datesMetallica", "5.04.2023 " + "\n" + "20.04.2023 " + "\n" + "2.05.2023");
 //        planning.put("datesRedHot", "10.04.2023 " + "\n" + "25.04.2023 " + "\n" + "4.05.2023");
 //        planning.put("datesQueen", "2.04.2023" + "\n" + " 15.04.2023 " + "\n" + " 30.04.2023");
 
-        ////// Metallica ici
 
-        Dancer Prince = new Dancer(
+
+
+
+        System.out.println(metallica.guitarist.toString());
+        System.out.println(redHotChilliPeppers.guitarist.toString());
+
+        redHotChilliPeppers.play();
+        metallica.play();
+        queen.play();
+
+//        Dates et lieu des groupes
+//        metallica.guitarist.playBand();
+//        System.out.println(redHotChilliPeppers.toString());
+//        System.out.println(queen.toString());
+
+
+    }
+    public static MusicBand.Band createMetallica() {
+        MusicBand.Dancer prince = new MusicBand.Dancer(
                 "Prince Rogers Nelson or 'Prince'",
-                57,
-                "The prince of pop",
-                new Style[]{Style.HEAVYMETAL, Style.METAL}
+                57, "The prince of pop",
+                new MusicBand.Style[]{MusicBand.Style.HEAVYMETAL, Style.METAL}
         );
-
-        Guitarist Kirk = new Guitarist(
+        Guitarist kirk = new Guitarist(
                 "Kirk Hammet",
                 59,
                 "The guitarist of Metallica",
-                new Style[]{Style.HEAVYMETAL, Style.METAL}
-        );
-        Drummer Lars = new Drummer(
+                new Style[]{Style.HEAVYMETAL, Style.METAL});
+        Drummer lars = new Drummer(
                 "Lars Ulrich",
                 58,
                 "The drummer of Metallica",
-                new Style[]{Style.HEAVYMETAL, Style.METAL}
-        );
-        Singer James = new Singer(
+                new Style[]{Style.HEAVYMETAL, Style.METAL});
+        Singer james = new Singer(
                 "James Hetfield",
                 59,
                 "The singer of Metallica",
-                new Style[]{Style.HEAVYMETAL, Style.METAL}
-        );
-        BassPlayer Robert = new BassPlayer(
+                new Style[]{Style.HEAVYMETAL, Style.METAL});
+        BassPlayer robert = new BassPlayer(
                 "Robert Trujillo",
                 57,
                 "The bassplayer of Metallica",
-                new Style[]{Style.HEAVYMETAL, Style.METAL}
-        );
+                new Style[]{Style.HEAVYMETAL, Style.METAL});
+        return new Band(
+                 "metallica",
+                 prince,
+                 kirk,
+                 lars,
+                 robert,
+                 james);
+    };
 
-//        Planning planningMetallica = new Planning(
-//
-//                "Metallica",
-//                "5.04.2023 " + "\n" + "20.04.2023 " + "\n" + "2.05.2023",
-//                "Las Vegas"
-//        );
-
-        Band metallica = new Band(
-                "metallica",
-//                planningMetallica,
-                Prince,
-                Kirk,
-                Lars,
-                Robert,
-                James
-        );
-
-
-        ////// Red hot ici
-
-
+    public static Band createRedHotChilliPeppers() {
         Dancer Mick = new Dancer(
                 "Michael Philip Jagger",
                 79,
@@ -76,7 +78,6 @@ public class MainMusicBand {
                 new Style[]{Style.ROCK}
 
         );
-
         Drummer Chad = new Drummer(
                 "Chad Smith",
                 60,
@@ -89,33 +90,23 @@ public class MainMusicBand {
                 "Singer of the Red Hot Chilli Peppers",
                 new Style[]{Style.ROCK}
         );
-
         BassPlayer Flea = new BassPlayer(
                 "Michael Peter Balzary",
                 59,
                 "The bassplayer of the Red Hot Chilli Peppers",
                 new Style[]{Style.ROCK}
         );
-
-//        Planning planningRedHot = new Planning(
-//                "Red Hot Chilli Peppers",
-//                "10.04.2023 " + "\n" + "25.04.2023 " + "\n" + "4.05.2023",
-//                "Las Vegas"
-//        );
-
-        Band redHotChilliPeppers = new Band(
+        return new Band(
                 "redHotChilliPeppers",
-//                planningRedHot,
                 Mick,
                 JohnFromRedHot,
                 Chad,
                 Flea,
                 Anthony
         );
+    }
 
-        // Queen ici
-
-
+    public static Band createQueen() {
         Dancer Elvis = new Dancer(
                 "Elvis presley",
                 29,
@@ -129,75 +120,31 @@ public class MainMusicBand {
                 "Guitarist of Queen",
                 new Style[]{Style.ROCK}
         );
-
         Drummer Roger = new Drummer(
                 "Roger Taylor",
                 54,
                 "Drummer of Queen",
-                new Style[]{Style.ROCK}        );
+                new Style[]{Style.ROCK}
+        );
         Singer Freddie = new Singer(
                 "Freddie Mercury",
                 56,
                 "Singer of Queen",
-                new Style[]{Style.ROCK}        );
-
+                new Style[]{Style.ROCK}
+        );
         BassPlayer JohnFromQueen = new BassPlayer(
                 "John Deacon",
                 71,
                 "The bassplayer Queen",
-                new Style[]{Style.ROCK}        );
-
-//        Planning planningQueen = new Planning(
-//                "Queen",
-//                "2.04.2023" + "\n" + " 15.04.2023 " + "\n" + " 30.04.2023",
-//                "Las Vegas"
-//
-//        );
-
-        Band queen = new Band(
+                new Style[]{Style.ROCK}
+        );
+        return new Band(
                 "Queen",
-//                planningQueen,
                 Elvis,
                 Brian,
                 Roger,
                 JohnFromQueen,
                 Freddie
         );
-
-
-
-
-        // Fonction
-        metallica.guitarist.play(); // structure to call the playNotes method
-        System.out.println(metallica.drummer.toString());
-        System.out.println(redHotChilliPeppers.guitarist.toString());
-        System.out.println(metallica.singer.toString());
-        System.out.println(metallica.bassplayer.toString());
-        System.out.println(metallica.dancer.toString());
-
-        // Goal for this week
-        System.out.println(metallica.toString());
-        System.out.println(redHotChilliPeppers.toString());
-
-
-        metallica.drummer.play();
-
-        metallica.bassplayer.play();
-
-        // if enough time
-        redHotChilliPeppers.play();
-        metallica.play();
-
-        // Dates et lieu des groupes
-//        metallica.guitarist.playBand();
-//        System.out.println(redHotChilliPeppers.toString());
-//        System.out.println(queen.toString());
-
-//         Check if the group can play or not
-        queen.play();
-
-
-        // Savoir POURQUOI je l'ai fait, savoir justifier son action et bien explique la raison de POURQUOI on l'a fait comme ca et pas autrement
-
     }
 }
