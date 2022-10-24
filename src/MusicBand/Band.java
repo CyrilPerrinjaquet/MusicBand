@@ -36,12 +36,6 @@ public class Band {
 
 
     public String toString() {
-        String descriptionDancer = "The dancer of " + name + " is : " + dancer.name + " and he is " + dancer.age + "\n" + "who he is : " + dancer.experiences + "\n" + "\n";
-        String descriptionSinger = "The singer is " + name + " is : " + singer.name + " and he is " + singer.age + "\n" + "who he is : " + singer.experiences + "\n" + "\n";
-        String descriptionGuitarist = "The guitarist is " + name + " is : " + guitarist.name + " and he is " + guitarist.age + "\n" + "who he is : " + guitarist.experiences + "\n" + "\n";
-        String descriptionBassPlayer = "The bass player is " + name + " is : " + bassplayer.name + " and he is " + bassplayer.age + "\n" + "who he is : " + bassplayer.experiences + "\n" + "\n";
-        String descriptionDrummer = "The drummer is " + name + " is : " + drummer.name + " and he is " + drummer.age + "\n" + "who he is : " + drummer.experiences + "\n" + "\n";
-
-        return descriptionDancer + descriptionSinger + descriptionGuitarist + descriptionBassPlayer + descriptionDrummer;
+        return dancer.toString() + "\n" + singer.toString() + "\n" + guitarist.toString() + "\n" + bassplayer.toString() + "\n" + drummer.toString();
     }
 }

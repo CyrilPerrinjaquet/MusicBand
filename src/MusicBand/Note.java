@@ -18,12 +18,15 @@ public enum Note { // faire une javadocs sur les enums
      * This method return 10 notes
      * @return 10 random notes
      */
-    public static Note[] randomNotes() {
-        Note[] notes = new Note[10];
+    public static Note[] randomNotes(int numberOfNotes) {
+        if (numberOfNotes < 0) {
+            return new Note[0];
+        }
+        Note[] notes = new Note[numberOfNotes];
 
-//        for (int currentNotesIndex = 0; currentNotesIndex < 10; currentNotesIndex++) {
+//        for (int currentNotesIndex = 0; currentNotesIndex < notes.length; currentNotesIndex++) {
             int currentNotesIndex = 0;
-            while (currentNotesIndex < 10) {
+            while (currentNotesIndex < numberOfNotes) {
 
                 // tire une note au hasard
                 int randomIndex = new Random().nextInt(0, Note.values().length - 1);

@@ -102,9 +102,9 @@ class BandTest {
 
     @Test
     void testTheBirthdayFunction() {
-        // todo implement the test to ensure that when you call the birthday function,
-        //  the age of the member is properly increased
-        //  2 assertions minimum by member.
+        assertEquals(54, queen.drummer.getAge());
+        queen.drummer.birthday();
+        assertEquals(55, queen.drummer.getAge());
     }
 
 }

@@ -37,8 +37,17 @@
 - Abstract :[aussi prévention, pour éviter que qlqu fasse n'importe quoi avec le code] une classe abstract est une classe qu'on va prendre pour modèle mais qui n'est pas encore finit (ex. abstract class Humain --> Homme précision de la classe abstraite Humain)
 
 - Instruction : Bloc d'instruction généralement entre des accolades {} et c'est a l'intérieur qu'on définit notre code 
-Instruction --> prend fin avec un ";" et est une action(ex. jump ou marcher)[Boucle for --> 3 instructions séparés de ;]
+  Instruction --> prend fin avec un ";" et est une action(ex. jump ou marcher)[Boucle for --> 3 instructions séparés de ;]
 
 - Objet vs fonction :  Objet = instance de classe
                        Fonction = ensemble d'instructions et qui peut être appelé dans le corps principale (par exemple Main) 
-- Objet = on peut call une méthode dessus et n'est pas un type primitif 
+
+- Objet = on peut call une méthode dessus et n'est pas un type primitif
+
+- getInstance() : Il va retourner l'instance de quelque chose [sers par exemple dans le cas d'un pseudo deja utilisé (meme si on utiliserai plutot une base de donnée pour ca)]
+
+- pattern singleton : Le Singleton est un patron de conception de création qui s’assure de l’existence d’un seul objet de son genre et fournit un unique point d’accès vers cet objet.
+
+- getter : 
+
+- setter : 

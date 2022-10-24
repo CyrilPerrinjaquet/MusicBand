@@ -1,9 +1,15 @@
 # Objectif pour la semaine prochaine
 ```markdown
 
+* Passer tous les tests 
+
+* Faire la méthode pour le test [testTheBirthYear()] ✅
+
+* Bien s'assurer que l'anniversaire se modifie correctement en fonction avec la méthode [testTheBirthdayFunction()] ✅
+
+=======
 * Faire une javadoc pour playnotes(); + play() dans band et une javadoc pour playBand(); ✅
 
-  
 * Compiler le code, appeler la méthode play sur un groupe(queen, red hot etc..) ✅
 
 * Commit le code qui fonctionne et merge la PR ✅

@@ -22,7 +22,7 @@ public abstract class Musician extends MemberBand {
      * print 10 random notes coming from the enum Note
      */
    public void playNotes() {
-       Note[] notes = Note.randomNotes();
+       Note[] notes = Note.randomNotes(-1);
        for (int notesIndex = 0; notesIndex < notes.length; notesIndex++) {
            System.out.println(notes[notesIndex]);
        }

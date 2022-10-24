@@ -13,13 +13,9 @@ public class MainMusicBand {
 
 
 
+       System.out.println(queen.drummer.getBirthYear());
 
-        System.out.println(metallica.guitarist.toString());
-        System.out.println(redHotChilliPeppers.guitarist.toString());
 
-        redHotChilliPeppers.play();
-        metallica.play();
-        queen.play();
 
 //        Dates et lieu des groupes
 //        metallica.guitarist.playBand();
@@ -28,11 +24,11 @@ public class MainMusicBand {
 
 
     }
-    public static MusicBand.Band createMetallica() {
-        MusicBand.Dancer prince = new MusicBand.Dancer(
+    public static Band createMetallica() {
+        Dancer prince = new MusicBand.Dancer(
                 "Prince Rogers Nelson or 'Prince'",
                 57, "The prince of pop",
-                new MusicBand.Style[]{MusicBand.Style.HEAVYMETAL, Style.METAL}
+                new Style[]{Style.HEAVYMETAL, Style.METAL}
         );
         Guitarist kirk = new Guitarist(
                 "Kirk Hammet",
