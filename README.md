@@ -18,7 +18,7 @@
 
 * Sortir l'enum Styles dans sa propre classe ✅
 
-* Chaque rétrospective présenter ce que j'ai fait
+* Chaque rétrospective présenter ce que j'ai fait ✅
 
 * Perfectionner les javadocs et les ajouters a toutes les méthodes et les attributs ✅
 
