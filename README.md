@@ -1,6 +1,17 @@
-# Objectif pour la semaine prochaine
+# Objectif pour la mardi prochain
 ```markdown
+* Ecrire une fonction qui retourne un tableau de nombre pair ou impaire ou les deux d'une certaine taille(en param mettre pair impaire et les deux) dans l'ordre croissant 
 
+* Test pour valider la fonction qui retourn pair
+
+* Deuxième exercice de faire la fonction en random
+
+* Ensuite de le faire en random --> trier dans l'ordre croissant et dans l'ordre décroissant[bonus]
+
+* Exercice généricité (a voir) 
+
+* [Bonus] Une fonction qui utilise le théoreme de pythagore (retourne le 3ème coté) [Exercice de la taille de l'écran]
+=======
 * Passer tous les tests 
 
 * Faire la méthode pour le test [testTheBirthYear()] ✅

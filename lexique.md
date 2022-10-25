@@ -48,8 +48,16 @@
 
 - pattern singleton : Le Singleton est un patron de conception de création qui s’assure de l’existence d’un seul objet de son genre et fournit un unique point d’accès vers cet objet.
 
-- getter : 
+- getter : méthode qui permet d'aller chercher l'attribut [Doit impérativement avoir créer la méthode Set et ensuite on peut la récupérer a partir de la valeur mise]
 
-- setter : 
+- setter : Permet de mettre/créer une valeur // que avec des valeurs primitives  
 
 - tdd : test driven developpement c'est quand les nouveaux développements sont guidés par les tests ([checklists] écrire la fonction au fur et a mesure en fonction des tests)
+
+- genericité :
+
+- Test :
+
+- Patron de conception : 
+
+- Mots reservés :

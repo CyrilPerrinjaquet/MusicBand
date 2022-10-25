@@ -28,7 +28,7 @@ public abstract class Musician extends MemberBand {
        }
    }
     public void playKeys(int numberOfKeys) {
-        Key[] keys = Key.randomKeys(numberOfKeys);
+        MusicKey[] keys = MusicKey.randomKeys(numberOfKeys);
         for (int keysIndex = 0; keysIndex < keys.length; keysIndex++) {
             System.out.println(keys[keysIndex]);
         }
