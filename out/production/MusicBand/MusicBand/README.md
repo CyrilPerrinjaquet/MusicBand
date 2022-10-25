@@ -7,6 +7,9 @@
 
 * Bien s'assurer que l'anniversaire se modifie correctement en fonction avec la méthode [testTheBirthdayFunction()] ✅
 
+* Dans la fonction playNotes rajouter directement le param et dans play (fonction descendante) ✅ // rajouter les tests directs ✅
+
+* Créer une autre fonction qui indique sur quelle clé on doit jouer // de maniere aléatoire // écrire tout les tests dabords ✅
 =======
 * Faire une javadoc pour playnotes(); + play() dans band et une javadoc pour playBand(); ✅
 

@@ -21,13 +21,18 @@ public abstract class Musician extends MemberBand {
      * the playNotes() method makes the artist play some random notes
      * print 10 random notes coming from the enum Note
      */
-   public void playNotes() {
-       Note[] notes = Note.randomNotes(-1);
+   public void playNotes(int numberOfNotes) {
+       Note[] notes = Note.randomNotes(numberOfNotes);
        for (int notesIndex = 0; notesIndex < notes.length; notesIndex++) {
            System.out.println(notes[notesIndex]);
        }
    }
-
+    public void playKeys(int numberOfKeys) {
+        Key[] keys = Key.randomKeys(numberOfKeys);
+        for (int keysIndex = 0; keysIndex < keys.length; keysIndex++) {
+            System.out.println(keys[keysIndex]);
+        }
+    }
 }
 
 

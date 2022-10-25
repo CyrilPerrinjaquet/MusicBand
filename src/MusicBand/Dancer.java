@@ -29,7 +29,6 @@ public class Dancer extends Musician {
      */
     public void play() {
         stretching();
-        super.playNotes();
     }
 
     /**

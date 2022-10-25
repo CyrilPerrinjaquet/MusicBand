@@ -51,3 +51,5 @@
 - getter : 
 
 - setter : 
+
+- tdd : test driven developpement c'est quand les nouveaux développements sont guidés par les tests ([checklists] écrire la fonction au fur et a mesure en fonction des tests)

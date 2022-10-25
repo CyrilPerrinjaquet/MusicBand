@@ -106,5 +106,4 @@ class BandTest {
         queen.drummer.birthday();
         assertEquals(55, queen.drummer.getAge());
     }
-
 }

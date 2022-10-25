@@ -1,7 +1,9 @@
 package MusicBand;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.imageio.stream.ImageInputStream;
 import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,7 +21,6 @@ public class NoteTest {
     @Test
     void ensureNegativeValueDoesNotBreakFunction() {
         Note[] notes = Note.randomNotes(-1);
-
         assertEquals(0, notes.length);
     }
 
@@ -52,5 +53,70 @@ public class NoteTest {
                 currentNotesIndex++;
             }
         }
+    }
+
+
+    Band queen;
+
+    @BeforeEach
+    void setUp() {
+        Dancer elvis = new Dancer(
+                "Elvis presley",
+                29,
+                "King of Rock'n'Roll",
+                new Style[]{Style.ROCKNROLL, Style.ROCK}
+
+        );
+        Guitarist brian = new Guitarist(
+                "Brian May",
+                62,
+                "Guitarist of Queen",
+                new Style[]{Style.ROCK}
+        );
+
+        Drummer roger = new Drummer(
+                "Roger Taylor",
+                54,
+                "Drummer of Queen",
+                new Style[]{Style.ROCK}
+        );
+        Singer freddie = new Singer(
+                "Freddie Mercury",
+                56,
+                "Singer of Queen",
+                new Style[]{Style.ROCK}
+        );
+
+        BassPlayer johnFromQueen = new BassPlayer(
+                "John Deacon",
+                71,
+                "The bassplayer Queen",
+                new Style[]{Style.ROCK}
+        );
+
+        queen = new Band(
+                "Queen",
+                elvis,
+                brian,
+                roger,
+                johnFromQueen,
+                freddie
+        );
+    }
+
+    @Test
+    void checkNumberOfNotes() {
+
+        assertEquals(21, playNotes(21));
+
+    }
+
+    // Cette méthode est quasiment la même que celle que les membres ont seulement elle retourne un type int
+    public int playNotes(int numberOfNotes) {
+        Note[] notes = Note.randomNotes(numberOfNotes);
+        for (int notesIndex = 0; notesIndex < notes.length; notesIndex++) {
+//            System.out.println(notes[notesIndex]);
+        }
+        return notes.length;
     }
 }

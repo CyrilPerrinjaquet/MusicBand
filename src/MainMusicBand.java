@@ -10,10 +10,8 @@ public class MainMusicBand {
 //        planning.put("datesRedHot", "10.04.2023 " + "\n" + "25.04.2023 " + "\n" + "4.05.2023");
 //        planning.put("datesQueen", "2.04.2023" + "\n" + " 15.04.2023 " + "\n" + " 30.04.2023");
 
-
-
-
-       System.out.println(queen.drummer.getBirthYear());
+        queen.drummer.playKeys(1);
+        queen.drummer.playNotes(1);
 
 
 
