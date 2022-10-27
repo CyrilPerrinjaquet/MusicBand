@@ -1,16 +1,12 @@
 import MusicBand.*;
 
+import java.util.Arrays;
+
 public class MainMusicBand {
     public static void main(String[] args) {
         Band metallica = createMetallica();
         Band redHotChilliPeppers = createRedHotChilliPeppers();
         Band queen = createQueen();
-
-//
-//      queen.bassplayer.onlyEven();
-//      queen.bassplayer.onlyOdd();
-//      queen.bassplayer.evenAndOdd(1022, 11);
-      queen.bassplayer.RandomOddAndEven();
 
     }
     public static Band createMetallica() {
