@@ -59,6 +59,12 @@ public abstract class MemberBand {
         return year - getAge();
     }
 
+    /**
+     * Check if a mumber is even or odd
+     * @param even
+     * @param odd
+     * @return 0, because of the tests
+     */
     public int evenAndOdd(int even, int odd) {
 
         if (even % 2 == 0) {
@@ -71,10 +77,15 @@ public abstract class MemberBand {
         } else {
             System.out.println("This number isn't odd : " + odd);
         }
-        return 0;
+        return 0; // pour les tests
     }
 
-    public void onlyEven() {
+    /**
+     * It will sort an array of only even numbers and in ascending order
+     * It will sort myArray and if the number is even --> he will put it in myEvenArray but not removed from myArray
+     * @prints myEvenArray
+     */
+    public void onlyEven(int even) {
         int[] myArray = {3, 2, 4, 34, 99, 14, 109, 41, 52, 35, 18};
         int n = myArray.length;
         int[] myEvenArray = new int[n];
@@ -85,9 +96,15 @@ public abstract class MemberBand {
                 myEvenArray[index] = myArray[currentIndex];
                 Arrays.sort(myEvenArray);
             }
+            System.out.println(Arrays.toString(myEvenArray));
         }
     }
 
+    /**
+     * It will sort an array of only odd numbers and in ascending order
+     * It will sort myArray and if the number is odd --> he will put it in myOddArray but not removed from myArray
+     * @prints myOddArray
+     */
     public void onlyOdd() {
         int[] myArray = {90, 1, 24, 784, 29, 75, 1110, 91, 60, 38, 10};
         int[] myOddArray = new int[myArray.length];
@@ -100,6 +117,11 @@ public abstract class MemberBand {
             }
         }
     }
+    /**
+     * It will randomised an array and sort it in ascending/descending
+     * @prints the index of the randomised array
+     * @prints The sorted array in ascending order and descending
+     */
     public void RandomOddAndEven() {
         Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
         int currentIndex = 0;
