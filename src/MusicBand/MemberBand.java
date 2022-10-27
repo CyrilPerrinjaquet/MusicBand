@@ -1,5 +1,8 @@
 package MusicBand;
+
 import java.util.Calendar;
+import java.util.*;
+import java.util.Collections;
 
 public abstract class MemberBand {
     protected String name;
@@ -43,7 +46,7 @@ public abstract class MemberBand {
      * function to increment the age of the member and wish him a great birthday in the console.
      */
     public void birthday() {
-        this.age ++;
+        this.age++;
         System.out.println("Happy Birthday to you");
     }
 
@@ -56,6 +59,66 @@ public abstract class MemberBand {
         return year - getAge();
     }
 
+    public int evenAndOdd(int even, int odd) {
+
+        if (even % 2 == 0) {
+            System.out.println("This number is even : " + even);
+        } else {
+            System.out.println("This number is odd : " + even);
+        }
+        if (odd % 2 != 0) {
+            System.out.println("This number is odd : " + odd);
+        } else {
+            System.out.println("This number isn't odd : " + odd);
+        }
+        return 0;
+    }
+
+    public void onlyEven() {
+        int[] myArray = {3, 2, 4, 34, 99, 14, 109, 41, 52, 35, 18};
+        int n = myArray.length;
+        int[] myEvenArray = new int[n];
+        int index = 0;
+// pour trier le tableau dans l'ordre croissant et QUE avoir des nombres pairs
+        for (int currentIndex = 0; currentIndex < myArray.length; currentIndex++) {
+            if (myArray[currentIndex] % 2 == 0) {
+                myEvenArray[index] = myArray[currentIndex];
+                Arrays.sort(myEvenArray);
+            }
+        }
+    }
+
+    public void onlyOdd() {
+        int[] myArray = {90, 1, 24, 784, 29, 75, 1110, 91, 60, 38, 10};
+        int[] myOddArray = new int[myArray.length];
+        int index = 0;
+// pour trier le tableau dans l'ordre croissant et QUE avoir des nombres impairs
+        for (int currentIndex = 0; currentIndex < myArray.length; currentIndex++) {
+            if (myArray[currentIndex] % 2 == 1) {
+                myOddArray[index] = myArray[currentIndex];
+                Arrays.sort(myOddArray);
+            }
+        }
+    }
+    public void RandomOddAndEven() {
+        Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
+        int currentIndex = 0;
+
+        int randomIndex = new Random().nextInt(0, myArray.length);
+        int randomElement = myArray[randomIndex];
+
+        for (int elementsIndex = 0; elementsIndex < myArray.length; elementsIndex++) {
+            myArray[currentIndex] = randomElement;
+        }
+          System.out.println(myArray[currentIndex]);
+        /* ------------{Ordre} ---------- */
+        Arrays.sort(myArray); // dans l'ordre croissant
+        System.out.println("The ascending order : " + Arrays.toString(myArray));
+        Arrays.sort(myArray, Collections.reverseOrder()); // dans l'ordre décroissant
+        System.out.println("The descending order : " + Arrays.toString(myArray));
+    }
+
 }
+
 
 

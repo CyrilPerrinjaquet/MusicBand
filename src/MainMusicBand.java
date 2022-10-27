@@ -5,17 +5,12 @@ public class MainMusicBand {
         Band metallica = createMetallica();
         Band redHotChilliPeppers = createRedHotChilliPeppers();
         Band queen = createQueen();
-//        HashMap<String, String> planning = new HashMap<>();
-//        planning.put("datesMetallica", "5.04.2023 " + "\n" + "20.04.2023 " + "\n" + "2.05.2023");
-//        planning.put("datesRedHot", "10.04.2023 " + "\n" + "25.04.2023 " + "\n" + "4.05.2023");
-//        planning.put("datesQueen", "2.04.2023" + "\n" + " 15.04.2023 " + "\n" + " 30.04.2023");
 
-
-//        Dates et lieu des groupes
-//        metallica.guitarist.playBand();
-//        System.out.println(redHotChilliPeppers.toString());
-//        System.out.println(queen.toString());
-
+//
+//      queen.bassplayer.onlyEven();
+//      queen.bassplayer.onlyOdd();
+//      queen.bassplayer.evenAndOdd(1022, 11);
+      queen.bassplayer.RandomOddAndEven();
 
     }
     public static Band createMetallica() {

@@ -6,6 +6,9 @@ import org.junit.jupiter.api.*;
 
 import MusicBand.*;
 
+import java.util.Arrays;
+import java.util.Random;
+
 class BandTest {
 
     Band queen;
@@ -106,4 +109,28 @@ class BandTest {
         queen.drummer.birthday();
         assertEquals(55, queen.drummer.getAge());
     }
+
+    @Test
+    void testIfReturnOdd() {
+        boolean expected_result = 11 % 2 != 0;
+        assertEquals(true , expected_result);
+    }
+
+    @Test
+    void testIfReturnEven() {
+        assertEquals(0, queen.drummer.evenAndOdd(20, 1));
+    }
+
+    @Test
+    void TestIfRandom() {
+        Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
+        int currentIndex = 0;
+
+        int randomIndex = new Random().nextInt(0, myArray.length); /* si on fait - 1 il va pas compter la derniere note/clé*/
+        int randomElement = myArray[randomIndex];
+        myArray[currentIndex] = randomElement;
+
+        assertEquals(randomElement, myArray[currentIndex]);
+    }
+
 }
