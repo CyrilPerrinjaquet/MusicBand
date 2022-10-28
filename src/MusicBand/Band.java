@@ -6,7 +6,6 @@ public class Band {
     public MusicBand.BassPlayer bassplayer;
     public MusicBand.Guitarist guitarist;
     public MusicBand.Drummer drummer;
-
     public MusicBand.Singer singer;
     public MusicBand.Dancer dancer;
 

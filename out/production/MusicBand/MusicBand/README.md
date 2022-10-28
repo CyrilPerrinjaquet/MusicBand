@@ -10,7 +10,7 @@
 
 * Exercice généricité (a voir) 
 
-* [Bonus] Une fonction qui utilise le théoreme de pythagore (retourne le 3ème coté) [Exercice de la taille de l'écran]
+* [A faire en premier avant l'ex généricité] Une fonction qui utilise le théoreme de pythagore (retourne le 3ème coté) [Exercice de la taille de l'écran] ✅
 =======
 * Passer tous les tests 
 

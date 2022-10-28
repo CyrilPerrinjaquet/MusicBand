@@ -118,7 +118,7 @@ class BandTest {
 
     @Test
     void testIfReturnEven() {
-        assertEquals(0, queen.drummer.evenAndOdd(20, 1));
+        assertEquals(0, Even_or_Odd.evenAndOdd(20, 1));
     }
 
     @Test
@@ -132,5 +132,19 @@ class BandTest {
 
         assertEquals(randomElement, myArray[currentIndex]);
     }
+    @Test
+    void testIfGetHypothenuse() {
+        double adjacent;
+        double opposite;
+        double hypothenuse;
 
+        hypothenuse = Math.pow(5, 2);
+        adjacent = Math.pow(4, 2);
+        opposite = Math.pow(3, 2);
+
+        if (hypothenuse == adjacent + opposite) {
+
+        }
+        assertEquals(hypothenuse, 25);
+    }
 }
