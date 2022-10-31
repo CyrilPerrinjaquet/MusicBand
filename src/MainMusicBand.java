@@ -1,5 +1,6 @@
 import MusicBand.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MainMusicBand {
@@ -8,7 +9,16 @@ public class MainMusicBand {
         Band redHotChilliPeppers = createRedHotChilliPeppers();
         Band queen = createQueen();
 
-       EvenOrOdd.ascendingOrder();
+       MusicSchool<Singer> singerMusicSchool = new MusicSchool<>();
+       MusicSchool<Guitarist> guitaristMusicSchool = new MusicSchool<>();
+       MusicSchool<Musician> musicianMusicSchool = new MusicSchool<>();
+
+        singerMusicSchool.addStudent(metallica.singer);
+
+//        for (int index = 0; index < musicianMusicSchool.getStudents().size(); index++) {
+//            musicianMusicSchool.getStudent(index).play();
+//        }
+        singerMusicSchool.play();
     }
     public static Band createMetallica() {
         Dancer prince = new MusicBand.Dancer(

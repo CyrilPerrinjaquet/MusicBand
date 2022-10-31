@@ -54,10 +54,11 @@
 
 - tdd : test driven developpement c'est quand les nouveaux développements sont guidés par les tests ([checklists] écrire la fonction au fur et a mesure en fonction des tests)
 
-- genericité :
+- genericité : [réutilisation] Permet de pouvoir travailler avec n'importe quel type de donnée et dans ce cas là avoir qu'une seul méthode pour plein de classes la réutilisant
+                               On définit justment déja le type d'entrée, on dit que (par ex. notre étudiant sera forcément un musician et pas un étudiant de médicine)
 
-- Test :
+- Test : [vérification, validation] Permet de tester à l'unité chaque fonction qu'on implémente et donc éviter de potentiels problèmes
 
-- Patron de conception : 
+- Patron de conception : [design pattern] solution a un problème de conception courant, solution simple et est un best practice
 
-- Mots reservés :
+- Mots reservés : Les mots réservés sont des mots clés donc natifs et ils permettent de modifier classe, les mots clés ne peuvent pas être modifié suelement manipulés
