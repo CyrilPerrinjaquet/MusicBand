@@ -14,10 +14,12 @@ public class MainMusicBand {
        MusicSchool<Musician> musicianMusicSchool = new MusicSchool<>();
 
         singerMusicSchool.addStudent(metallica.singer);
+        singerMusicSchool.addStudent(queen.singer);
+        guitaristMusicSchool.addStudent(metallica.guitarist);
+        guitaristMusicSchool.addStudent(redHotChilliPeppers.guitarist);
+        guitaristMusicSchool.addStudent(queen.guitarist);
+        System.out.println(guitaristMusicSchool.getStudents());
 
-//        for (int index = 0; index < musicianMusicSchool.getStudents().size(); index++) {
-//            musicianMusicSchool.getStudent(index).play();
-//        }
         singerMusicSchool.play();
     }
     public static Band createMetallica() {

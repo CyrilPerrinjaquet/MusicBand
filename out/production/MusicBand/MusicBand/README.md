@@ -8,7 +8,7 @@
 
 * Après de le faire en random --> trier dans l'ordre croissant et dans l'ordre décroissant[bonus] ✅
 
-* Exercice généricité (a voir) 
+* Exercice généricité (a voir)  ✅
 
 * [A faire en premier avant l'ex généricité] Une fonction qui utilise le théoreme de pythagore (retourne le 3ème coté) [Exercice de la taille de l'écran] ✅
 =======

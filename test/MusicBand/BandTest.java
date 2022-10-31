@@ -127,7 +127,7 @@ class BandTest {
         Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
         int currentIndex = 0;
 
-        int randomIndex = new Random().nextInt(0, myArray.length); /* si on fait - 1 il va pas compter la derniere note/clé*/
+        int randomIndex = new Random().nextInt(0, myArray.length);
         int randomElement = myArray[randomIndex];
         myArray[currentIndex] = randomElement;
 

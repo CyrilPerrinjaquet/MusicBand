@@ -26,18 +26,19 @@ public class EvenOddTest {
 
     @Test
     void testIfAscendingOrder() {
-        Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
-        Arrays.sort(myArray);
+        int[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
+        int[] expected_result = {2, 9, 11, 40, 50, 109, 157, 244, 258, 924, 2040};
 
-        assertEquals(Arrays.toString(myArray), EvenOrOdd.ascendingOrder());
+        assertEquals(Arrays.toString(expected_result), Arrays.toString(EvenOrOdd.ascendingOrder(myArray)));
+
     }
 
     @Test
     void testIfDescendingOrder() {
-        Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
-        Arrays.sort(myArray, Collections.reverseOrder());
+        int[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
+        int[] expected_Array = {2040, 924, 258, 244, 157, 109, 50, 40, 11, 9, 2};
 
-        assertEquals(Arrays.toString(myArray), EvenOrOdd.descendingOrder());
+        assertEquals(Arrays.toString(expected_Array),Arrays.toString(EvenOrOdd.descendingOrder(myArray)));
     }
 
     @Test
@@ -48,6 +49,7 @@ public class EvenOddTest {
             assertTrue(EvenOrOdd.isEven(myArray[index]));
         }
     }
+
     @Test
     void getArrayOddTest() {
         int[] myArray = EvenOrOdd.getArray(EvenOrOdd.NumberType.ODD, 10);

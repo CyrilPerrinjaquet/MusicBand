@@ -55,8 +55,8 @@
 - tdd : test driven developpement c'est quand les nouveaux développements sont guidés par les tests ([checklists] écrire la fonction au fur et a mesure en fonction des tests)
 
 - genericité : [réutilisation] Permet de pouvoir travailler avec n'importe quel type de donnée et dans ce cas là avoir qu'une seul méthode pour plein de classes la réutilisant
-                               On définit justment déja le type d'entrée, on dit que (par ex. notre étudiant sera forcément un musician et pas un étudiant de médicine)
-
+                               On définit justment déja le type d'entrée et on attend le même type à la sortie, on dit que (par ex. notre étudiant sera forcément un musician et pas un étudiant de médicine)
+                                
 - Test : [vérification, validation] Permet de tester à l'unité chaque fonction qu'on implémente et donc éviter de potentiels problèmes
 
 - Patron de conception : [design pattern] solution a un problème de conception courant, solution simple et est un best practice

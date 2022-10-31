@@ -15,7 +15,7 @@ public class EvenOrOdd {
         return numberToTest % 2 == 0;
     }
     public static boolean isOdd(int numberToTest){
-        return numberToTest % 2 != 0;
+       return !isEven(numberToTest);
     }
 
 
@@ -45,24 +45,28 @@ public class EvenOrOdd {
     }
 
     /**
-     * It will randomised an array and sort it in ascending/descending
-     * @prints the index of the randomised array
-     * @prints The sorted array in ascending order and descending
+     * This method sort an array in an ascending order
+     * @param int[] myArray
      */
-    public static String ascendingOrder() {
-        Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
-
+    public static int[] ascendingOrder(int[] myArray) {
         Arrays.sort(myArray); // dans l'ordre croissant
-        System.out.println(Arrays.toString(myArray));
-        return Arrays.toString(myArray);
+        return myArray;
     }
 
+    /**
+     * This method sort an array in an descending order
+     * It basically make the reversed ascending order manually
+     * @param int[] myArray
+     */
+    public static int[] descendingOrder(int[] myArray) {
+        ascendingOrder(myArray);
+        int[] reverse = new int[myArray.length];
 
-    public static String descendingOrder() {
-        Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
+        for (int i = 0; i < myArray.length; i++) {
+            int reversIndex = reverse.length - 1 - i;
+                reverse[reversIndex] = myArray[i];
+        }
 
-        Arrays.sort(myArray, Collections.reverseOrder()); // dans l'ordre décroissant
-        System.out.println("The descending order : " + Arrays.toString(myArray));
-        return Arrays.toString(myArray);
+        return reverse;
     }
 }
