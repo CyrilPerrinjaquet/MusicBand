@@ -8,8 +8,7 @@ public class MainMusicBand {
         Band redHotChilliPeppers = createRedHotChilliPeppers();
         Band queen = createQueen();
 
-       queen.guitarist.getHypothenuse(3, 4, 5);
-       Even_or_Odd.ascendingOrder();
+       EvenOrOdd.ascendingOrder();
     }
     public static Band createMetallica() {
         Dancer prince = new MusicBand.Dancer(

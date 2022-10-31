@@ -59,26 +59,6 @@ public abstract class MemberBand {
         return year - getAge();
     }
 
-    public double getHypothenuse(int adj, int opp, int hyp) {
-        double adjacent;
-        double opposite;
-        double hypothenuse;
-
-        hypothenuse = Math.pow(hyp, 2);
-        adjacent = Math.pow(adj, 2);
-        opposite = Math.pow(opp, 2);
-
-
-        if (hypothenuse == adjacent + opposite) {
-            System.out.println("Bien joué : " + hypothenuse);
-        } else {
-            System.out.println("Retry : " + hypothenuse + " isn't the right number ");
-        }
-
-        return hypothenuse;
-    }
-
-
 }
 
 
