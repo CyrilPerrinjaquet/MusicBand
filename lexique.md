@@ -37,8 +37,28 @@
 - Abstract :[aussi prévention, pour éviter que qlqu fasse n'importe quoi avec le code] une classe abstract est une classe qu'on va prendre pour modèle mais qui n'est pas encore finit (ex. abstract class Humain --> Homme précision de la classe abstraite Humain)
 
 - Instruction : Bloc d'instruction généralement entre des accolades {} et c'est a l'intérieur qu'on définit notre code 
-Instruction --> prend fin avec un ";" et est une action(ex. jump ou marcher)[Boucle for --> 3 instructions séparés de ;]
+  Instruction --> prend fin avec un ";" et est une action(ex. jump ou marcher)[Boucle for --> 3 instructions séparés de ;]
 
 - Objet vs fonction :  Objet = instance de classe
                        Fonction = ensemble d'instructions et qui peut être appelé dans le corps principale (par exemple Main) 
-- Objet = on peut call une méthode dessus et n'est pas un type primitif 
+
+- Objet = on peut call une méthode dessus et n'est pas un type primitif
+
+- getInstance() : Il va retourner l'instance de quelque chose [sers par exemple dans le cas d'un pseudo deja utilisé (meme si on utiliserai plutot une base de donnée pour ca)]
+
+- pattern singleton : Le Singleton est un patron de conception de création qui s’assure de l’existence d’un seul objet de son genre et fournit un unique point d’accès vers cet objet.
+
+- getter : méthode qui permet d'aller chercher l'attribut [Doit impérativement avoir créer la méthode Set et ensuite on peut la récupérer a partir de la valeur mise]
+
+- setter : Permet de mettre/créer une valeur // que avec des valeurs primitives  
+
+- tdd : test driven developpement c'est quand les nouveaux développements sont guidés par les tests ([checklists] écrire la fonction au fur et a mesure en fonction des tests)
+
+- genericité : [réutilisation] Permet de pouvoir travailler avec n'importe quel type de donnée et dans ce cas là avoir qu'une seul méthode pour plein de classes la réutilisant
+                               On définit justment déja le type d'entrée et on attend le même type à la sortie, on dit que (par ex. notre étudiant sera forcément un musician et pas un étudiant de médicine)
+                                
+- Test : [vérification, validation] Permet de tester à l'unité chaque fonction qu'on implémente et donc éviter de potentiels problèmes
+
+- Patron de conception : [design pattern] solution a un problème de conception courant, solution simple et est un best practice
+
+- Mots reservés : Les mots réservés sont des mots clés donc natifs et ils permettent de modifier classe, les mots clés ne peuvent pas être modifié suelement manipulés

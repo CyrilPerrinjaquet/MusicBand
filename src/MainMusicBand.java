@@ -1,38 +1,32 @@
 import MusicBand.*;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class MainMusicBand {
     public static void main(String[] args) {
         Band metallica = createMetallica();
         Band redHotChilliPeppers = createRedHotChilliPeppers();
         Band queen = createQueen();
-//        HashMap<String, String> planning = new HashMap<>();
-//        planning.put("datesMetallica", "5.04.2023 " + "\n" + "20.04.2023 " + "\n" + "2.05.2023");
-//        planning.put("datesRedHot", "10.04.2023 " + "\n" + "25.04.2023 " + "\n" + "4.05.2023");
-//        planning.put("datesQueen", "2.04.2023" + "\n" + " 15.04.2023 " + "\n" + " 30.04.2023");
 
+       MusicSchool<Singer> singerMusicSchool = new MusicSchool<>();
+       MusicSchool<Guitarist> guitaristMusicSchool = new MusicSchool<>();
+       MusicSchool<Musician> musicianMusicSchool = new MusicSchool<>();
 
+        singerMusicSchool.addStudent(metallica.singer);
+        singerMusicSchool.addStudent(queen.singer);
+        guitaristMusicSchool.addStudent(metallica.guitarist);
+        guitaristMusicSchool.addStudent(redHotChilliPeppers.guitarist);
+        guitaristMusicSchool.addStudent(queen.guitarist);
+        System.out.println(guitaristMusicSchool.getStudents());
 
-
-
-        System.out.println(metallica.guitarist.toString());
-        System.out.println(redHotChilliPeppers.guitarist.toString());
-
-        redHotChilliPeppers.play();
-        metallica.play();
-        queen.play();
-
-//        Dates et lieu des groupes
-//        metallica.guitarist.playBand();
-//        System.out.println(redHotChilliPeppers.toString());
-//        System.out.println(queen.toString());
-
-
+        singerMusicSchool.play();
     }
-    public static MusicBand.Band createMetallica() {
-        MusicBand.Dancer prince = new MusicBand.Dancer(
+    public static Band createMetallica() {
+        Dancer prince = new MusicBand.Dancer(
                 "Prince Rogers Nelson or 'Prince'",
                 57, "The prince of pop",
-                new MusicBand.Style[]{MusicBand.Style.HEAVYMETAL, Style.METAL}
+                new Style[]{Style.HEAVYMETAL, Style.METAL}
         );
         Guitarist kirk = new Guitarist(
                 "Kirk Hammet",

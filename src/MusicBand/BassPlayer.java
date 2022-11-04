@@ -29,7 +29,8 @@ public class BassPlayer extends Musician {
      */
     public void play() {
         tuning();
-        super.playNotes();
+        super.playNotes(32);
+        super.playKeys(4);
     }
 
     /**

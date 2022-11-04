@@ -2,9 +2,13 @@ package MusicBand;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import jdk.jshell.execution.Util;
 import org.junit.jupiter.api.*;
 
 import MusicBand.*;
+
+import java.util.Arrays;
+import java.util.Random;
 
 class BandTest {
 
@@ -102,9 +106,37 @@ class BandTest {
 
     @Test
     void testTheBirthdayFunction() {
-        // todo implement the test to ensure that when you call the birthday function,
-        //  the age of the member is properly increased
-        //  2 assertions minimum by member.
+        assertEquals(54, queen.drummer.getAge());
+        queen.drummer.birthday();
+        assertEquals(55, queen.drummer.getAge());
     }
 
+    @Test
+    void testIfReturnOdd() {
+        boolean expected_result = 11 % 2 != 0;
+        assertEquals(true , expected_result);
+    }
+
+    @Test
+    void testIfReturnEven() {
+        assertEquals(0, EvenOrOdd.isEven(20));
+    }
+
+    @Test
+    void TestIfRandom() {
+        Integer[] myArray = {2, 9, 244, 924, 109, 50, 2040, 11, 40, 258, 157};
+        int currentIndex = 0;
+
+        int randomIndex = new Random().nextInt(0, myArray.length);
+        int randomElement = myArray[randomIndex];
+        myArray[currentIndex] = randomElement;
+
+        assertEquals(randomElement, myArray[currentIndex]);
+    }
+    @Test
+    void testIfGetHypothenuse() {
+        assertEquals(Utils.getHypothenuse(3, 4), 5);
+        assertEquals(Utils.getHypothenuse(0, 0), 0);
+        assertEquals(Utils.getHypothenuse(-3, -4), 0);
+    }
 }

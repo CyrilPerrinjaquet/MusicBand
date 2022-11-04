@@ -29,7 +29,6 @@ public class Dancer extends Musician {
      */
     public void play() {
         stretching();
-        super.playNotes();
     }
 
     /**
@@ -37,7 +36,7 @@ public class Dancer extends Musician {
      * @return "The Dancer" + the desription in the memberband toString()
      */
     @Override
-    public String toString() {// expliquer ce que sa fait
+    public String toString() {
         return "The Dancer : \n" + super.toString();
     }
 }

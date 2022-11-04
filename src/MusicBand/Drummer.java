@@ -30,7 +30,8 @@ public class Drummer extends Musician {
      */
     public void play() { // the principal method of the drummer
         repairing();
-        super.playNotes();
+        super.playNotes(32);
+        super.playKeys(4);
     }
 
     /**

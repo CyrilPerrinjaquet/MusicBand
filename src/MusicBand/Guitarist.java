@@ -38,7 +38,8 @@ public class Guitarist extends Musician {
      */
     public void play() {
         accord();
-        super.playNotes();
+        super.playNotes(32);
+        super.playKeys(4);
     }
 
     /**

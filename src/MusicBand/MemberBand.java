@@ -1,7 +1,10 @@
 package MusicBand;
 
+import java.sql.PreparedStatement;
+import java.util.Calendar;
+import java.util.prefs.PreferenceChangeListener;
+
 public abstract class MemberBand {
-    private int notesIndex;
     protected String name;
     protected int age;
     protected String experiences;
@@ -43,7 +46,7 @@ public abstract class MemberBand {
      * function to increment the age of the member and wish him a great birthday in the console.
      */
     public void birthday() {
-        this.age ++;
+        this.age++;
         System.out.println("Happy Birthday to you");
     }
 
@@ -52,9 +55,11 @@ public abstract class MemberBand {
      * @return the year of birthday of the Member
      */
     public int getBirthYear() {
-        // todo implement this method
-        return 0;
+        int year = Calendar.getInstance().get(Calendar.YEAR);
+        return year - getAge();
     }
+
 }
+
 
 

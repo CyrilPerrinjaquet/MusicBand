@@ -31,7 +31,8 @@ public class Singer extends Musician {
      */
     public void play() {
         preparation();
-        super.playNotes();
+        super.playNotes(32);
+        super.playKeys(4);
     }
 
     /**
