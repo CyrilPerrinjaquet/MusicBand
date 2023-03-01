@@ -1,4 +1,4 @@
-# Objectif pour la mardi prochain
+# Objectif pour mardi prochain
 ```markdown
 * Ecrire une fonction qui retourne un tableau de nombre pair ou impaire ou les deux d'une certaine taille(en param mettre pair impaire et les deux) dans l'ordre croissant ✅ 
 
